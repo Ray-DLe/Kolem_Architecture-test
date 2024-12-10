@@ -35,3 +35,11 @@ function switchBackground() {
 
 // Автоматическая смена фона каждые 5 секунд
 setInterval(switchBackground, 5000);
+
+// Исчезновение логотипа через 3 секунды
+document.addEventListener("DOMContentLoaded", () => {
+    const logoOverlay = document.querySelector(".logo-overlay");
+    setTimeout(() => {
+        logoOverlay.classList.add("hidden");
+    }, 4700); // Изменено на 3 секунды
+});
