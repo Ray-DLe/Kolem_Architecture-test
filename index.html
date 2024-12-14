@@ -22,7 +22,7 @@
 
 	<!-- Эффект логотипа -->
 	<div class="logo-overlay">
-		<img src="assets/images/Logo.png" alt="Kolem_Architecture">
+		<img src="assets/images/logo.png" alt="Kolem_Architecture">
 	</div>
 	
 
@@ -139,6 +139,18 @@
     <!-- Подключение скриптов -->
     <script src="js/slider.js"></script>
     <script src="js/forms.js"></script>
+
+	<!-- Модальное окно для просмотра изображений -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+    <div class="modal-content">
+        <img class="modal-image" id="modalImg">
+        <div class="modal-description" id="modalDescription"></div>
+    </div>
+</div>
+<script src="gallery.js"></script>
 </body>
 </html>
 
